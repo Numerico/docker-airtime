@@ -6,8 +6,10 @@ sudo service rabbitmq-server start
 sudo service apache2 start
 
 mkdir ~/airtime
-curl -L https://github.com/sourcefabric/airtime/archive/airtime-2.5.2.1.tar.gz | tar --strip-components=1 -C ~/airtime -xz
-sudo ~/airtime/install -fapi
+
+curl -L https://github.com/Numerico/airtime/archive/2.5.x.zip > /tmp/airtime.zip 
+unzip /tmp/airtime.zip -d ~/airtime
+sudo ~/airtime/airtime-2.5.x/install -fapi
 
 sudo mkdir -p /srv/airtime/stor
 sudo chown -R www-data:www-data /srv/airtime

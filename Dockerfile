@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:trusty
 
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
@@ -8,10 +8,6 @@ ENV HOSTNAME localhost
 MAINTAINER Víctor Rojas <okvic77@me.com>
 COPY help/pre.sh /pre.sh
 RUN /pre.sh
-
-
-
-
 
 COPY alone.conf /etc/supervisor/conf.d/supervisord.conf
 COPY help/install.sh /home/airtime/install.sh
