@@ -52,7 +52,7 @@ sudo cp ~/helpers/htaccess /usr/share/airtime/public/.htaccess
 sudo cp ~/helpers/config /etc/airtime/airtime.conf
 
 
-sudo php5enmod opcache
+sudo phpenmod opcache
 sudo rm -rf ~/airtime
 
 sudo apt-get clean
